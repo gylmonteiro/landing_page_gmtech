@@ -7,6 +7,7 @@
 
 header {
   width: 100%;
+  padding: 10px 30px;
 }
 
 .header-content {
@@ -18,6 +19,7 @@ header {
 
 i {
   color: #ffffff;
+  font-size: 2rem;
 }
 
 .header-icons {
@@ -26,7 +28,7 @@ i {
 }
 
 .header-icons :hover i {
-  color: #0094a7;
+  color: #22A5B6;
 }
 
 .header-logo {
@@ -41,7 +43,6 @@ i {
 .header-button-content {
   display: flex;
   justify-content: right;
-  width: 300px;
 }
 
 .header-button {
@@ -50,6 +51,60 @@ i {
   border-radius: 4px;
   color: #ffffff;
   background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.header-button:hover {
+  border: 1px solid #22A5B6;
+  background-color: #22A5B6;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+  i {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .header-logo img {
+    margin-top: 20px;
+    width: 150px;
+  }
+  .header-button {
+    display: none;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg_future.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
 }
 
 body {

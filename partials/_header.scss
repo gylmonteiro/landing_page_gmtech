@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    padding: 10px 30px;
 }
 
 .header-content {
@@ -10,7 +11,8 @@ header {
 }
 
 i {
-    color: $white-normal
+    color: $white-normal;
+    font-size: 2rem;
 }
 
 .header-icons {
@@ -20,7 +22,7 @@ i {
 
 .header-icons :hover {
     i{
-        color: $blue-normal;
+        color: $blue-light;
     }
 }
 .header-logo {
@@ -34,7 +36,7 @@ i {
 .header-button-content {
     display: flex;
     justify-content: right;
-   width: 300px;
+//    width: 300px;
 }
 .header-button {
     border: 1px solid $white-normal;
@@ -42,4 +44,40 @@ i {
     border-radius: 4px;
     color: $white-normal;
     background-color: transparent;
+    transition: background-color 0.8s;
 }
+
+.header-button:hover{
+    border: 1px solid $blue-light;
+    background-color: $blue-light;
+
+}
+
+.header-logo {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:768px){
+    .header-content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    i {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .header-logo img{
+        margin-top: 20px;
+        width: 150px;
+        
+    }
+
+    .header-button {
+        display: none;
+    }
+} 

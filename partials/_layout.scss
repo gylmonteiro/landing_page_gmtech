@@ -151,6 +151,7 @@ to {
 .details-tecnology {
     margin: 10px auto;
     max-width: 90%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,9 +167,29 @@ to {
         gap: 60px;
         img {
             width: 10%;
-            height: auto;
+            height: 50px;
         }
     
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .details-tecnology {
+        height: auto;
+        h3{
+            text-align: center;
+        }
+        .container-img{
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 50%;
+                height: auto;
+            }
+        }
+    }
+
+     
 }

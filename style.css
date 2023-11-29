@@ -202,6 +202,34 @@ i {
     flex-direction: column;
   }
 }
+.tecnology {
+  margin-top: 20px;
+  background-color: #edeaef;
+  padding: 10px 0;
+}
+
+.details-tecnology {
+  margin: 10px auto;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-tecnology h3 {
+  margin-bottom: 15px;
+  color: #10525A;
+  font-size: 25px;
+}
+.details-tecnology .container-img {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+.details-tecnology .container-img img {
+  width: 10%;
+  height: auto;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

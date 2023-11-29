@@ -143,3 +143,32 @@ to {
 
 //Tecnology
 
+.tecnology {
+    margin-top: 20px;
+    background-color: $white-dark;
+    padding: 10px 0;
+}
+.details-tecnology {
+    margin: 10px auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        margin-bottom: 15px;
+        color: $blue-dark;
+        font-size: 25px;
+    }
+
+    .container-img{
+        display: flex;
+        justify-content: space-around;
+        gap: 60px;
+        img {
+            width: 10%;
+            height: auto;
+        }
+    
+    }
+
+}

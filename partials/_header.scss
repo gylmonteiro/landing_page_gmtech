@@ -35,14 +35,15 @@ i {
 
 .header-button-content {
     display: flex;
-    justify-content: right;
-//    width: 300px;
+    justify-content: center;
+    width: 230px;
 }
 .header-button {
     border: 1px solid $white-normal;
-    padding: 8px 24px;
+    padding: 8px 10px;
     border-radius: 4px;
     color: $white-normal;
+    font-size: 16px;
     background-color: transparent;
     transition: background-color 0.8s;
 }

@@ -276,15 +276,17 @@ i {
 .cards {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 .cards .card {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
@@ -308,6 +310,84 @@ i {
   z-index: 1;
 }
 
+.card-detail button {
+  margin-top: 5px;
+  background-color: #edeaef;
+  padding: 10px;
+  border: none;
+  color: #10525A;
+  border-radius: 10px;
+  box-shadow: 0px -1px 8px -4px rgba(0, 0, 0, 0.45);
+}
+
+.card-detail button:hover {
+  transform: scale(1.1);
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 0 0 0;
+  gap: 15px;
+}
+.location h2 {
+  color: #10525A;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 5px;
+}
+.footer p {
+  color: #edeaef;
+  text-align: center;
+}
+
+.footer-logo {
+  max-width: 230px;
+}
+
+.btn-zap {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 99;
+  color: #edeaef;
+  text-decoration: none;
+}
+.btn-zap img {
+  max-width: 74px;
+}
+.btn-zap img:hover {
+  transform: scale(1.1);
+}
+.btn-zap span {
+  display: none;
+}
+
+.btn-zap:hover span {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-zap img {
+    max-width: 37px;
+  }
+  .btn-zap span {
+    background-color: #fefbff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #10525A;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

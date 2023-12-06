@@ -262,6 +262,7 @@ i {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  padding: 0 14px;
 }
 .details-services h2 {
   text-align: center;
